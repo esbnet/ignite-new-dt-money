@@ -6,7 +6,8 @@ import {
   TransactionsContainer,
   TransactionsTable,
 } from "./styles"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { TrasactionsContext } from "../../contexts/TransactionsContext"
 
 interface Transaction {
   id: number
@@ -18,18 +19,7 @@ interface Transaction {
 }
 
 export function Transactions() {
-  const [transactions, setTransacrions] = useState<Transaction[]>([])
-
-  async function loadTransactions() {
-    const response = await fetch("http://localhost:3333/transactroins")
-    const data = await response.json()
-    console.log(data)
-    setTransacrions(data)
-  }
-
-  useEffect(() => {
-    loadTransactions()
-  }, [])
+  const { transactions} = useContext(TrasactionsContext)
 
   return (
     <div>
