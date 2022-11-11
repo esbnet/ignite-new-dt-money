@@ -1,0 +1,20 @@
+{
+  "transactroins": [
+    {
+      "id": 1,
+      "descriptions": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2022-07-29T19:39:44.505Z"
+    },
+    {
+      "id": 2,
+      "descriptions": "Humburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 14000,
+      "createdAt": "2022-07-29T19:39:44.505Z"
+    }
+  ]
+}
