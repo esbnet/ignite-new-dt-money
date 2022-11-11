@@ -3,7 +3,7 @@ import * as Dialog from "@radix-ui/react-dialog"
 import { HeaderContainer, HeaderContent, NewTranslationButton } from "./styles"
 
 import Logo from "../../assets/logo.svg"
-import { NewTransactionModal } from "../NewTransactionModal"
+import { NewTransactionModal } from "../../pages/Transactions/components/NewTransactionModal"
 
 export function Header() {
   return (
