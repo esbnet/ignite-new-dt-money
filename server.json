@@ -23,6 +23,30 @@
       "category": "Work",
       "price": 1000,
       "createdAt": "2022-07-10T19:39:44.505Z"
+    },
+    {
+      "description": "Salário",
+      "price": 8500,
+      "category": "Work",
+      "type": "income",
+      "createdAt": "2022-11-16T20:13:48.322Z",
+      "id": 4
+    },
+    {
+      "description": "Hospedagem quarks_code",
+      "price": 352,
+      "category": "site",
+      "type": "outcome",
+      "createdAt": "2022-11-16T20:18:14.283Z",
+      "id": 5
+    },
+    {
+      "description": "Domínio - quarkscode",
+      "price": 350,
+      "category": "Site",
+      "type": "outcome",
+      "createdAt": "2022-11-16T21:00:24.136Z",
+      "id": 6
     }
   ]
 }
