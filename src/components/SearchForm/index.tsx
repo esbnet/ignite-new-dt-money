@@ -1,12 +1,12 @@
-import { useForm } from "react-hook-form"
+import { useForm } from 'react-hook-form'
 
-import * as z from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
+import * as z from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
-import { MagnifyingGlass } from "phosphor-react"
-import { SearchFormContainer } from "./styles"
-import { TransactionsContext } from "../../contexts/TransactionsContext"
-import { useContext } from "react"
+import { MagnifyingGlass } from 'phosphor-react'
+import { SearchFormContainer } from './styles'
+import { TransactionsContext } from '../../contexts/TransactionsContext'
+import { useContext } from 'react'
 
 const searchFormSchema = z.object({ query: z.string() })
 
@@ -29,11 +29,11 @@ export function SearchForm() {
   return (
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
       <input
-        type='text'
-        placeholder='Busque por transações'
+        type="text"
+        placeholder="Busque por transações"
         {...register('query')}
       />
-      <button type='submit' disabled={isSubmitting}>
+      <button type="submit" disabled={isSubmitting}>
         <MagnifyingGlass size={20} />
         Buscar
       </button>
